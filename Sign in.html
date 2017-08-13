@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign In</title>
+
+<a href="Home.html"><img src="Final Banner.jpg" width="99%" height="250" alt=""></a>
+<body background="memphis-colorful.png">
+
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; /
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;  
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(52,145,134);
+}
+
+.button4:hover {background-color: rgb(52,145,134);}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.button5:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+	.button6 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+	
+	.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+</head>
+<body>
+
+
+<table width="99%" border="0">
+  <tbody>
+    <tr>
+      <td>&nbsp;
+    <a href="Home.html"><button class="button button1">&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</button></a>  
+<button class="button button2">&nbsp;&nbsp;About us&nbsp;&nbsp;</button>
+<button class="button button3">Contact Us</button>
+<button class="button button4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAQs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+<button class="button button5">&nbsp;&nbsp;Podcasts&nbsp;&nbsp;</button>
+<button class="button button2">&nbsp;&nbsp;Start Now&nbsp;&nbsp;</button>
+      </td>
+      
+      <td align="right">
+      <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">More Options</button>
+  <div align="left" id="myDropdown" class="dropdown-content">
+    <a href="sign in.html">Sign In</a>
+    <a href="sign up.html">Sign Up</a>
+    <a href="Language.html">Language</a></td>
+  </div>
+</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+  
+	
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<body>
+<style>
+a:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: #349186;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ED1C24;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #2B3990;
+    background-color: transparent;
+    text-decoration: underline;
+}
+</style><a href="Sign up.html">
+<h3>If you do not have an account just press this text and you will be redirected to the sign up page.</h3></a>
+<form action="Sign in2.html">
+  E-mail:<br>
+  <input type="text" name="email" value="">
+  <br>
+ <br>
+  <input type="submit" value="Submit">
+</form> 
+</body>
+</html>
